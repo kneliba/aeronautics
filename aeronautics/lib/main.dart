@@ -67,20 +67,38 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       body: Center(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Container(
-              height: 250,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 239, 239, 239),
-                  borderRadius: BorderRadius.circular(12)),
+            const SizedBox(height: 16.0),
+            Padding(
+                padding: const EdgeInsets.only(left: 12.0, right: 12.0),
+                child: Container(
+                  height: 250,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 239, 239, 239),
+                      borderRadius: BorderRadius.circular(14)),
+                )),
+            const SizedBox(height: 8.0),
+            const Padding(
+                padding: EdgeInsets.only(left: 12.0),
+                child: Text(
+                  "Header",
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.left,
+                )),
+            const SizedBox(height: 8.0),
+            const Padding(
+              padding: EdgeInsets.only(left: 12.0, right: 12.0),
+              child: Text(
+                'This is a short description of the image. Lorem ipsum dolor sit amet, consectetur adipisc Duis aute irure dolor in reprehenderit ',
+              ),
             ),
-            const Text(
-              'Here are some images',
-            ),
-            Text(
-              '',
-              style: Theme.of(context).textTheme.headlineMedium,
+            const SizedBox(height: 8.0),
+            const Padding(
+              padding: EdgeInsets.only(left: 12.0),
+              child: Text('8m ago ',
+                  style: TextStyle(color: Color.fromARGB(255, 227, 227, 227))),
             ),
           ],
         ),

@@ -91,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const Padding(
               padding: EdgeInsets.only(left: 12.0, right: 12.0),
               child: Text(
-                'This is a short description of the image. Lorem ipsum dolor sit amet, consectetur adipisc Duis aute irure dolor in reprehenderit ',
+                'This is a short description of the image. Lorem ipsum dolor sit amet, consectetur adipisc Duis aute irure dolor in reprehenderit',
               ),
             ),
             const SizedBox(height: 8.0),
